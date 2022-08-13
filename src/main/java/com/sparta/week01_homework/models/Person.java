@@ -7,8 +7,10 @@ public class Person {
     private int age;
     private String address;
     private String job;
-
-    Person(){}
+    // 명시적으로 public해줌
+    // person클래스랑 controller클래스랑 다른 패키지에 있어서
+    // 명시적으로 안해주면 디폴트로 됨
+    public Person(){}
 //   Person(String name, int age, String address, String job){
 //        this.name = name;
 //        this.age = age;
